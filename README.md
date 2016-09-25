@@ -30,5 +30,13 @@ sips -Z 640 <filename>
  ```
  git update-index --assume-unchanged <filename>
  ```
+ 
+## Database
+ 
+### Dropping a user without any errors
+ ```
+ GRANT USAGE ON *.* TO 'username'@'localhost';
+ DROP USER 'username'@'localhost';
+ ```
 
  
