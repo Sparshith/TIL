@@ -38,5 +38,14 @@ sips -Z 640 <filename>
  GRANT USAGE ON *.* TO 'username'@'localhost';
  DROP USER 'username'@'localhost';
  ```
+ 
+## Misc
+ 
+### Removing .php extension from urls using .htaccess
+ ```
+ RewriteEngine on
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteRule ^([^\.]+)$ $1.php [NC,L]
+ ```
 
  
