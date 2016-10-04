@@ -47,5 +47,12 @@ sips -Z 640 <filename>
  RewriteCond %{REQUEST_FILENAME} !-f
  RewriteRule ^([^\.]+)$ $1.php [NC,L]
  ```
+### Uninstalling Java 1.7 and installing Java 1.8
 
+Got this error while setting up solr on ec2: ``` Exception in thread "main" java.lang.UnsupportedClassVersionError: org/apache/solr/util/SolrCLI : Unsupported major.minor version 52.0 ``` which happens when there is a difference between version of JDK during compile and run time. Solved it by updating to Java 1.8.
+
+```
+sudo yum install java-1.8.0
+sudo yum remove java-1.7.0-openjdk
+```
  
