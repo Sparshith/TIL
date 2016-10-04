@@ -38,15 +38,21 @@ sips -Z 640 <filename>
  GRANT USAGE ON *.* TO 'username'@'localhost';
  DROP USER 'username'@'localhost';
  ```
- 
-## Misc
- 
-### Removing .php extension from urls using .htaccess
- ```
- RewriteEngine on
- RewriteCond %{REQUEST_FILENAME} !-f
- RewriteRule ^([^\.]+)$ $1.php [NC,L]
- ```
+
+## Installations and setup
+
+### Solr
+
+Use http://mirror.nyi.net/Apache/lucene/solr/ to check for latest versions and download.
+
+```
+wget http://mirror.nyi.net/Apache/lucene/solr/6.2.0/solr-6.2.0.tgz
+tar xzf solr-6.2.0.tgz
+cd solr-6.2.0
+bin/solr start -e cloud -noprompt
+
+```
+
 ### Uninstalling Java 1.7 and installing Java 1.8
 
 Got this error while setting up solr on ec2: ``` Exception in thread "main" java.lang.UnsupportedClassVersionError: org/apache/solr/util/SolrCLI : Unsupported major.minor version 52.0 ``` which happens when there is a difference between version of JDK during compile and run time. Solved it by updating to Java 1.8.
@@ -55,4 +61,14 @@ Got this error while setting up solr on ec2: ``` Exception in thread "main" java
 sudo yum install java-1.8.0
 sudo yum remove java-1.7.0-openjdk
 ```
+
+
+## Misc
  
+### Removing .php extension from urls using .htaccess
+```
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+```
+
