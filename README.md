@@ -68,11 +68,9 @@ bin/solr -e [EXAMPLE]
 ```
 
 ### Stopping server
-Assuming solr is running on 8983,
 
 ```
-lsof -i :8983
-kill -9 PID#
+bin/solr stop
 
 ```
 
