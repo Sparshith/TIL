@@ -49,8 +49,6 @@ Use http://mirror.nyi.net/Apache/lucene/solr/ to check for latest versions and d
 wget http://mirror.nyi.net/Apache/lucene/solr/6.2.0/solr-6.2.0.tgz
 tar xzf solr-6.2.0.tgz
 cd solr-6.2.0
-bin/solr start -e cloud -noprompt
-
 ```
 
 ### Uninstalling Java 1.7 and installing Java 1.8
@@ -62,6 +60,21 @@ sudo yum install java-1.8.0
 sudo yum remove java-1.7.0-openjdk
 ```
 
+## Solr
+
+### Starting server
+```
+bin/solr start -e cloud -noprompt
+```
+
+### Stopping server
+Assuming solr is running on 8983,
+
+```
+lsof -i :8983
+kill -9 PID#
+
+```
 
 ## Misc
  
