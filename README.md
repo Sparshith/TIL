@@ -64,7 +64,7 @@ sudo yum remove java-1.7.0-openjdk
 
 ### Starting server
 ```
-bin/solr start -e cloud -noprompt
+bin/solr -e [EXAMPLE]
 ```
 
 ### Stopping server
