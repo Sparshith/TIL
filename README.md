@@ -85,7 +85,6 @@ bin/solr -e [EXAMPLE]
 bin/solr stop
 
 ```
-
 ## Misc
  
 ### Removing .php extension from urls using .htaccess
@@ -93,5 +92,14 @@ bin/solr stop
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
+```
+
+
+## Frontend
+### Specifying font-weights while using google fonts
+
+```
+<link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,500,700">
 ```
 
