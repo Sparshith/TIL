@@ -41,6 +41,18 @@ sips -Z 640 <filename>
 
 ## Installations and setup
 
+### Composer
+
+```
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/
+```
+And in bash profile (little hacky)
+```
+vim ~/.bash_profile
+alias composer="php /usr/local/bin/composer.phar"
+```
+
 ### Solr
 
 Use http://mirror.nyi.net/Apache/lucene/solr/ to check for latest versions and download.
