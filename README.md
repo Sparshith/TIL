@@ -93,6 +93,11 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 ```
+### Embedding youtube videos
+Original link : https://www.youtube.com/watch?v=1ArKekKqg2o
+```
+  <iframe width="420" height="315" src="https://www.youtube.com/embed/1ArKekKqg2o" frameborder="0" allowfullscreen></iframe>
+```
 
 
 ## Frontend
