@@ -93,15 +93,19 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 ```
-### Embedding youtube videos
-Original link : https://www.youtube.com/watch?v=1ArKekKqg2o
+
+### Inbuilt servers (Simpler alternative toinstalling XAMPP/WAMP)
+Change directory to your working directory.
+
+Python 2
 ```
-  <iframe width="420" height="315" src="https://www.youtube.com/embed/1ArKekKqg2o" frameborder="0" allowfullscreen></iframe>
+python -m SimpleHTTPServer 80
 ```
-### Downloading with a different filename than what it's original name on the server
+PHP
 ```
- <a href="/orginal_name.pdf" download="New name">
+php -S localhost:8000
 ```
+
 
 ## Frontend
 ### Specifying font-weights while using google fonts
@@ -109,5 +113,16 @@ Original link : https://www.youtube.com/watch?v=1ArKekKqg2o
 ```
 <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=PT+Sans:400,500,700">
+```
+
+### Downloading with a different filename than what it's original name on the server
+```
+ <a href="/orginal_name.pdf" download="New name">
+```
+
+### Embedding youtube videos
+Original link : https://www.youtube.com/watch?v=1ArKekKqg2o
+```
+  <iframe width="420" height="315" src="https://www.youtube.com/embed/1ArKekKqg2o" frameborder="0" allowfullscreen></iframe>
 ```
 
