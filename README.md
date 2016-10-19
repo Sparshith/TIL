@@ -72,6 +72,11 @@ sudo yum install java-1.8.0
 sudo yum remove java-1.7.0-openjdk
 ```
 
+### Babel
+```
+sudo npm install -g babel-cli
+```
+
 ## Solr
 
 ### Starting server
@@ -85,6 +90,11 @@ bin/solr -e [EXAMPLE]
 bin/solr stop
 
 ```
+## Babel 
+```
+babel --presets es2016,react  <directory with jsx> --out-dir <directory to save js files>
+```
+
 ## Misc
  
 ### Removing .php extension from urls using .htaccess
