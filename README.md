@@ -159,7 +159,7 @@ Original link : https://www.youtube.com/watch?v=1ArKekKqg2o
 ### Facebook meta tags
 
 ```
-<meta property="og:title" content="<title>" />
+ <meta property="og:title" content="<title>" />
  <meta property="og:type" content="<type>" />
  <meta property="og:url" content="=<link to website>" />
  <meta property="og:image" content="<path to image>" />
