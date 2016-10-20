@@ -156,4 +156,13 @@ Original link : https://www.youtube.com/watch?v=1ArKekKqg2o
 ```
   <iframe width="420" height="315" src="https://www.youtube.com/embed/1ArKekKqg2o" frameborder="0" allowfullscreen></iframe>
 ```
+### Facebook meta tags
+
+```
+<meta property="og:title" content="<title>" />
+ <meta property="og:type" content="<type>" />
+ <meta property="og:url" content="=<link to website>" />
+ <meta property="og:image" content="<path to image>" />
+ <meta property="og:description" content="<text description>" />
+```
 
