@@ -48,24 +48,29 @@ sips -Z 640 <filename>
  tar xvzf redis-stable.tar.gz
  cd redis-stable
  ```
+
 * Install dependencies
  ```
  yum groupinstall 'Development Tools'
  cd deps
  make hiredis lua jemalloc linenoise geohash-int
  ```
+
 * Install from source code
  ```
  make
  ```
+
 * Run server
  ```
  redis-server
  ```
+
 * To keep it running as a daemon
  ```
  redis-server --daemonize yes
  ```
+
 * Ping to test
  ```
  redis-cli ping
