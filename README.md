@@ -165,4 +165,9 @@ Original link : https://www.youtube.com/watch?v=1ArKekKqg2o
  <meta property="og:image" content="<path to image>" />
  <meta property="og:description" content="<text description>" />
 ```
+### iOS fix for default blur added to disabled input
+```
+    -webkit-text-fill-color:#f4ee42
+    -webkit-opacity:1
+```
 
