@@ -62,6 +62,10 @@ Run server
 ```
 redis-server
 ```
+To keep it running as a daemon
+```
+redis-server --daemonize yes
+```
 Ping to test
 ```
 redis-cli ping
