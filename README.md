@@ -130,14 +130,30 @@ bin/solr stop
 babel --presets es2016,react  <directory with jsx> --out-dir <directory to save js files>
 ```
 
-## Misc
+## htaccess
  
-### Removing .php extension from urls using .htaccess
+### Removing .php extension from urls 
 ```
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 ```
+
+### Enabling gzip
+```
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+```
+
+
+## Misc
 
 ### Fisher-Yates Shuffle
 ```
