@@ -190,6 +190,17 @@ php -S localhost:8000
 
 
 ## Frontend
+
+### Vertically Aligning text next to an image.
+There is a huge misconception that the vertical align property has to be applied to the text. It should in fact be applied to the image.
+```
+<a href="https://github.com/Sparshith" class="github">
+						<img style="vertical-align: center" src="github.png">
+						<span> GitHub </span>
+</a>
+```
+
+
 ### Specifying font-weights while using google fonts
 
 ```
