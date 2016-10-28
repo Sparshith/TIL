@@ -195,7 +195,7 @@ php -S localhost:8000
 There is a huge misconception that the vertical align property has to be applied to the text. It should in fact be applied to the image.
 ```
 <a href="https://github.com/Sparshith" class="github">
-						<img style="vertical-align: center" src="github.png">
+						<img style="vertical-align: middle" src="github.png">
 						<span> GitHub </span>
 </a>
 ```
