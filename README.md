@@ -1,19 +1,5 @@
 # TIL
 
-## Terminal on mac
-
-###  Extracting .rar files
-```
-brew install unrar
-unrar x <filename>
-```
-
-### Resizing images
-```
-sips -Z 640 <filename>
-```
-(Z is to maintain aspect ratio)
-
 ## Git
 
 ### Adding files already getting tracked to gitignore
@@ -232,4 +218,26 @@ Original link : https://www.youtube.com/watch?v=1ArKekKqg2o
     -webkit-text-fill-color:#f4ee42
     -webkit-opacity:1
 ```
+
+## Python
+
+### Ordered params in requests module for GET calls.
+```
+	get_params = (('key1', 'value1'), ('key2', 'value2'), ('key3', 'value3'))
+	r = requests.get(url, params=get_params)
+```
+
+## Terminal on mac
+
+###  Extracting .rar files
+```
+brew install unrar
+unrar x <filename>
+```
+
+### Resizing images
+```
+sips -Z 640 <filename>
+```
+(Z is to maintain aspect ratio)
 
