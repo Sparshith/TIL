@@ -30,22 +30,21 @@ Original link : https://www.youtube.com/watch?v=1ArKekKqg2o
 ### Vertically Aligning text next to an image.
 There is a huge misconception that the vertical align property has to be applied to the text. It should in fact be applied to the image.
 ```
-<a href="https://github.com/Sparshith" class="github">
-						<img style="vertical-align: middle" src="github.png">
-						<span> GitHub </span>
-</a>
+	<a href="https://github.com/Sparshith" class="github">
+		<img style="vertical-align: middle" src="github.png">
+		<span> GitHub </span>
+	</a>
 ```
 
 
 ### Specifying font-weights while using google fonts
 
 ```
-<link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=PT+Sans:400,500,700">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,500,700">
 ```
 
 ### iOS fix for default blur added to disabled input
 ```
-    -webkit-text-fill-color:#f4ee42
-    -webkit-opacity:1
+	-webkit-text-fill-color:#f4ee42
+	-webkit-opacity:1
 ```
