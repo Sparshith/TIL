@@ -36,3 +36,9 @@ array (
   'c' => 3,
 );
 ```
+
+### Finding which php.ini file is being used
+Seems like a strange thing to find out, but I recently debugged a problem for quite sometime before realizing that the cli and the webserver were using different php.ini files.
+```
+php_ini_loaded_file();
+```
