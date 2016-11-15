@@ -15,3 +15,24 @@
  GRANT USAGE ON *.* TO 'username'@'localhost';
  DROP USER 'username'@'localhost';
 ```
+
+## PHP 
+
+### Merging two arrays while retaining indexes
+```
+$a = array(1, 2, 3);
+$b = array("a" => 1, "b" => 2, "c" => 3)
+$c = $a + $b;
+```
+
+$c will now be 
+```
+array (
+  0 => 1,
+  1 => 2,
+  2 => 3,
+  'a' => 1,
+  'b' => 2,
+  'c' => 3,
+);
+```
