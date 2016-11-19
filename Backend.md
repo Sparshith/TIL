@@ -15,6 +15,10 @@
  GRANT USAGE ON *.* TO 'username'@'localhost';
  DROP USER 'username'@'localhost';
 ```
+### Disabling strict mode on mysql server.
+```
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+```
 
 ## PHP 
 
