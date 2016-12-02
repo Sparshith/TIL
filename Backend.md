@@ -7,6 +7,13 @@
 	get_params = (('key1', 'value1'), ('key2', 'value2'), ('key3', 'value3'))
 	r = requests.get(url, params=get_params)
 ```
+### Pretty print JSON.
+```
+your_json = '["foo", {"bar":["baz", null, 1.0, 2]}]'
+parsed = json.loads(your_json)
+allMatchesJson = json.dumps(parsed, indent=4, sort_keys=True)
+```
+
 
 ## Database
  
@@ -45,4 +52,10 @@ array (
 Seems like a strange thing to find out, but I recently debugged a problem for quite sometime before realizing that the cli and the webserver were using different php.ini files.
 ```
 php_ini_loaded_file();
+```
+
+
+### References
+```
+http://stackoverflow.com/questions/12943819/how-to-python-prettyprint-a-json-file
 ```
