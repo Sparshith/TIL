@@ -30,3 +30,8 @@ unrar x <filename>
 sips -Z 640 <filename>
 ```
 (Z is to maintain aspect ratio)
+
+### Restarting apache server
+```
+sudo apachectl restart
+```
