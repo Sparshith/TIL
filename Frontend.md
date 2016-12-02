@@ -59,3 +59,11 @@ Useful when you want an OR border.
       </span>
 </div>
 ```
+
+## Twig
+
+### Set value inside if-else conditions.
+```
+ {%  if active_flag %}  {%  set checked_var = 'checked' %}   {% else %} {% set checked_var = '' %} {% endif %} 
+ 
+```
