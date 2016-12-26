@@ -14,6 +14,12 @@ parsed = json.loads(your_json)
 allMatchesJson = json.dumps(parsed, indent=4, sort_keys=True)
 ```
 
+### Excecuting files in Python3.
+execfile() is not supported in python3. :( This has to be used instead.
+```
+exec(open("filename.py").read())
+```
+
 
 ## Database
  
