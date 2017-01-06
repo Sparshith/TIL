@@ -19,6 +19,11 @@
 
 ## Terminal on mac
 
+### Finding instances of a particular term recursively
+```
+grep -roh <term_to_search> . | wc -w
+```
+
 ###  Extracting .rar files
 ```
 brew install unrar
