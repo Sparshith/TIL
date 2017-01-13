@@ -60,6 +60,12 @@ Seems like a strange thing to find out, but I recently debugged a problem for qu
 php_ini_loaded_file();
 ```
 
+### Finding the difference between two dates in months
+$d1 and $d2 are DateTime Objects.
+```
+$d1->diff($d2)->m + ($d1->diff($d2)->y*12)
+```
+
 
 ### References
 ```
