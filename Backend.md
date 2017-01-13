@@ -71,4 +71,5 @@ $d1->diff($d2)->m + ($d1->diff($d2)->y*12)
 ```
 http://stackoverflow.com/questions/12943819/how-to-python-prettyprint-a-json-file
 http://stackoverflow.com/questions/436198/what-is-an-alternative-to-execfile-in-python-3-0
+http://stackoverflow.com/questions/4233605/elegant-way-to-get-the-count-of-months-between-two-dates
 ```
