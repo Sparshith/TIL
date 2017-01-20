@@ -27,6 +27,23 @@ Original link : https://www.youtube.com/watch?v=1ArKekKqg2o
 
 ## CSS
 
+### Setting the box-sizing: border-box property to all relevant elements.
+This usually comes with most frameworks, but if you're handcoding, might take a while to figure this one out.
+```
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+```
+
 ### Vertically Aligning text next to an image.
 There is a huge misconception that the vertical align property has to be applied to the text. It should in fact be applied to the image.
 ```
