@@ -1,5 +1,14 @@
 # Workspace
 
+## Upgrade Issues.
+OS updates usually mean that some things start breaking. This is a list of things I came across, and the fixes for the same.
+### Apache after upgrading to Sierra.
+```
+sudo mv httpd.conf httpd.conf.sierra
+sudo mv httpd.conf~previous httpd.conf
+sudo apachectl restart
+```
+
 ## Git
 
 ### Adding files already getting tracked to gitignore
