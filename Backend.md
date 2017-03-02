@@ -1,5 +1,19 @@
 # Backend
 
+## Node JS
+
+### Passing req object to callback in [passport](https://github.com/jaredhanson/passport).
+Set the following in the object passed to the strategy
+```
+passReqToCallback: true
+```
+
+And access it as follows:
+```
+function(req, accessToken, refreshToken, profile, done) {
+}
+```
+
 ## Python
 
 ### Ordered params in requests module for GET calls.
