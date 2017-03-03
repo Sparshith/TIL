@@ -2,6 +2,13 @@
 
 ## Node JS
 
+### Saving dependencies entry while installing/uninstalling package.
+```
+Use '-- save' option
+
+eg: sudo npm install passport-fitbit-oauth2 --save
+```
+
 ### Passing req object to callback in [passport](https://github.com/jaredhanson/passport).
 Set the following in the object passed to the strategy
 ```
