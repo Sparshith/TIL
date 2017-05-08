@@ -2,6 +2,13 @@
 
 ## Node JS
 
+### Merging Javascript objects (ES6)
+Any number of objects can be merged into one. All params will be merged into the first param.
+
+```
+Object.assign(obj1, obj2, objn);
+```
+
 ### Passing req object to callback in [passport](https://github.com/jaredhanson/passport).
 Set the following in the object passed to the strategy
 ```
