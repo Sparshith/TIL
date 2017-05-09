@@ -25,7 +25,7 @@ function(req, accessToken, refreshToken, profile, done) {
 Getting the beginning and the end of day. The first part is any moment object. The param sent to endOf and startOf can be 'day' or 'week' to fetch the beginning and end of a week.
 ```
 moment().endOf('day');
-moment().start('day');
+moment().startOf('day');
 ```
 
 ## Python
