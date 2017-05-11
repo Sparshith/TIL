@@ -61,6 +61,17 @@ exec(open("filename.py").read())
 SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 ```
 
+### Importing database from terminal.
+1. Create Database
+```
+mysql -u [username] -p -e "create database [databasename];"
+```
+2. Now navigate to the directory where the sql file is located and import the mysql file
+```
+mysql -u[username] -p [databasename] < [.sql filename]
+```
+
+
 ## PHP 
 
 ### Merging two arrays while retaining indexes
