@@ -2,7 +2,7 @@
 
 ## Node JS
 
-### Converting a string of comma seperated into an array of integers
+### Converting a string of comma separated into an array of integers
 ```
 var b = a.split(',').map(Number);
 ```
