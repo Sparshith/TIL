@@ -2,6 +2,11 @@
 
 ## Node JS
 
+### Converting a string of comma seperated into an array of integers
+```
+var b = a.split(',').map(Number);
+```
+
 ### Merging Javascript objects (ES6)
 Any number of objects can be merged into one. All params will be merged into the first param.
 
