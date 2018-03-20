@@ -1,6 +1,17 @@
 
 ## Installations and setup
 
+### ZSH on Ubuntu
+```
+apt-get install zsh
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+sudo vim /etc/pam.d/chsh => comment auth required pam_shells.so
+sudo chsh $USER -s $(which zsh)
+=> Logout/Login
+```
+
+
+
 ### Redis
 * Download source code
  ```
